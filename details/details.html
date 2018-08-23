@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<script type="text/javascript" src="../bootstrap/js/jquery-1.9.1.js"></script>
+		<script type="text/javascript" src="../bootstrap/js/bootstrap.js"></script>
+		<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="details.css" />
+		<link href="https://vjs.zencdn.net/7.1.0/video-js.css" rel="stylesheet">
+		<!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+		<script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
+		<title></title>
+	</head>
+
+	<body>
+		<!--顶部-->
+		<div style="position: relative;">
+
+			<!--顶部栏背景图-->
+			<div class="nav" style="position: absolute;top: 0;left: 0;z-index: -100;">
+				<img class="img-responsive" style="height: 195px;" src="https://cdn.rail.tgp.qq.com/info/games/2000352/27d1c5e3f37e219feb118895f7f37165.jpg" />
+			</div>
+
+			<div class="container" style="padding-top: 50px;">
+				<!--目录节点-->
+				<div class="row category_content">
+					<ul class="category">
+						<li>
+							<a style="color: #737373;text-decoration:none;" href="">所有游戏</a>
+						</li>
+						<li style="color: #ADADAD;">NBA2KOL2</li>
+					</ul>
+				</div>
+				<!--封面图以及名称-->
+				<div class="row">
+					<div class="coverimg col-md-2 col-xs-2">
+						<img style="height: 150px;width: 105px;border-radius: 5px;border: 1px solid whitesmoke;" src="https://cdn.rail.tgp.qq.com/info/games/2000352/2c2dc799c98d1904cd062e60a0924cef.jpg" />
+					</div>
+					<div class="coverinfo" style="float: left;">
+						<h1 style="color: white;">NBA2KOL2</h1>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!--内容-->
+		<div class="container" style="margin-top: 50px;">
+
+			<div class="row">
+
+				<div class="col-md-8 col-xs-8">
+					<!--视频插件模块-->
+					<video id="my-video" class="video-js" controls preload="auto" width="640" height="360" poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+						<source src="https://media.w3.org/2010/05/sintel/trailer.mp4" type='video/mp4'>
+						<source src="MY_VIDEO.webm" type='video/webm'>
+						<p class="vjs-no-js">
+							To view this video please enable JavaScript, and consider upgrading to a web browser that
+							<a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+						</p>
+					</video>
+				</div>
+				<div class="col-md-4">
+					<table class="table">
+						<tr>
+							<td>运营阶段</td>
+							<td>2018-08-02不限号测试</td>
+						</tr>
+						<tr>
+							<td>开发商</td>
+							<td>不知道</td>
+						</tr>
+					</table>
+				</div>
+
+			</div>
+
+		</div>
+
+	</body>
+	<script src="https://vjs.zencdn.net/7.1.0/video.js"></script>
+
+</html>

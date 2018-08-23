@@ -1,0 +1,22 @@
+/*重写了面包屑导航样式*/
+
+.category {
+	font-size: 15px;
+  padding: 8px 15px;
+  margin-bottom: 20px;
+  list-style: none;
+}
+.category > li {
+  display: inline-block;
+}
+.category > li + li:before {
+  padding: 0 5px;
+  color: #737373;
+  content: "/\00a0";
+}
+.category > .active {
+  color: #777;
+}
+
+
+
