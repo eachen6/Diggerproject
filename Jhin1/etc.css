@@ -73,3 +73,16 @@ margin-top: -15px;
   background-color: #fff;
   border: 1px solid #ddd;
 }
+
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  z-index: 3;
+  color: #fff;
+  cursor: default;
+  background-color: black;
+  border-color: #337ab7;
+}
