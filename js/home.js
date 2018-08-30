@@ -32,3 +32,12 @@ $(function() {
 					$("#myCarousel3").carousel('next');
 				});
 			});
+			
+/**
+ * 新增一个全文跳转监听函数
+ */
+$(document).ready(function(){
+	$("#toallgame").click(function(e){
+		$("#frame").load("../views/etc.html")
+	})
+})

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="//cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+		<script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../vue/vue.min.js"></script>
+		<title></title>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-default" role="navigation" style="margin-bottom: 0px;background-color: #242424;border: none;border-radius: 0px">
+			<div class="container-fluid">
+				
+				<div class="row" style="margin-left: 15px;margin-right: 15px;">
+					
+					<div class="navbar-header">
+						<a class="navbar-brand" href="#" style="font-size: 25px;color: white;">Digger.com</a>
+					</div>
+					<div class="navbar-header col-md-offset-4 col-xs-offset-4">
+						<a class="navbar-brand" style="cursor: pointer;color: white;" id="shop">商店</a>
+						<a class="navbar-brand" style="cursor: pointer;color: white;" id="community">社区</a>
+						<a class="navbar-brand" style="cursor: pointer;color: white;" id="chat">客服</a>
+					</div>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#" style="color: white;"><span class="glyphicon glyphicon-user"></span> 注册</a></li>
+						<li><a href="#" style="color: white;"><span class="glyphicon glyphicon-log-in"></span> 登录</a></li>
+					</ul>
+					
+				</div>
+				
+				
+			</div>
+		</nav>
+		
+		<div id="frame">
+			<img src="../img/bgimg.PNG"/>
+		</div>
+		
+		<script>
+			$(document).ready(function(){
+				$("#shop").click(function(e){
+					$("#frame").load("home.html")
+				})
+				$("#community").click(function(e){
+					$("#frame").load("details.html")
+				})
+			})
+		</script>
+
+	</body>
+
+</html>
