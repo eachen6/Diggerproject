@@ -8,12 +8,13 @@ var qrcode = new QRCode(document.getElementById("qrcode"), {
 
 
 $(document).ready(function(){
+	
 	var qrText = "扫描付款";
 	qrcode.makeCode(qrText);
+	
 	$("#btn_wish").click(function(e){
-		game.iswish = (game.iswish == false) ? true : false
+	game.iswish = (game.iswish == false) ? true : false
 	console.log("之后",game.iswish)
-	console.log(e)
 })
 
 })
