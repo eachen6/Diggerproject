@@ -16,8 +16,11 @@
 				
 				<div class="row" style="margin-left: 15px;margin-right: 15px;">
 					
-					<div class="navbar-header">
+					<div class="nav navbar-nav navbar-left">
+						
+						<img style="cursor: pointer;" height="50" height="50" src="../img/logo.png"/>
 						<a class="navbar-brand" href="#" style="font-size: 25px;color: white;">Digger.com</a>
+						
 					</div>
 					<div class="navbar-header col-md-offset-4 col-xs-offset-4">
 						<a class="navbar-brand" style="cursor: pointer;color: white;" id="shop">商店</a>
@@ -26,7 +29,7 @@
 					</div>
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="#" style="color: white;"><span class="glyphicon glyphicon-user"></span> 注册</a></li>
-						<li><a href="#" style="color: white;"><span class="glyphicon glyphicon-log-in"></span> 登录</a></li>
+						<li><a href="#" style="color: white;" data-toggle="modal" data-target="#loginModal"><span class="glyphicon glyphicon-log-in"></span> 登录</a></li>
 					</ul>
 					
 				</div>
@@ -38,6 +41,60 @@
 		<div id="frame">
 			<img src="../img/bgimg.PNG"/>
 		</div>
+		
+		<!-- 模态框（Modal） -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
+	<div class="modal-dialog">
+		<div class="modal-content" style="background: rgba(255,255,255,0.5);">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" 
+						aria-hidden="true">×
+				</button>
+				<h4 class="modal-title" id="myModalLabel">
+					请登录
+				</h4>
+			</div>
+			<div class="modal-body">
+				<div class="container-fluid">
+					
+					<form action="" method="post">
+						<div class="row" style="margin-bottom: 20px;">
+							<input style="width: 50%;" class="form-control col-md-offset-3" type="text" name="account" id="account" value="" placeholder="请输入账号" />
+						</div>
+						<div class="row" style="margin-bottom: 20px;">
+							<input style="width: 50%;" class="form-control col-md-offset-3" class="form-control" type="password" name="password" id="password" placeholder="请输入密码" />
+						</div>
+						<div class="row">
+							<a class="pull-right">忘记密码</a>
+						</div>
+					</form>
+					
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" 
+						data-dismiss="modal">关闭
+				</button>
+				<button type="button" class="btn btn-primary">
+					登录
+				</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+		
+		<footer id="footer">
+            	<nav class="navbar  navbar-default" style="background-color: #242424;border: none;border-radius: 0px;">
+					<div class="container" >
+						<div class="weibu" style="text-align: center;color: white;" >
+							<h3>肇庆学院肇梦杯|网页设计大赛|关于比赛|团队组成|权利声明|法律顾问|网站广告中心|网站与营销|队友智囊团|客服中心</h3>
+								<p>软件工程小小团队制作</p>
+								<p>0110-010100-100000-111100</p>
+								<p><a href="www.baidu.com"><img src="../img/footer.png"/></a>肇梦杯比赛作品</p>
+						</div>
+					</div>
+				</nav>
+        </footer>
 		
 		<script>
 			$(document).ready(function(){
