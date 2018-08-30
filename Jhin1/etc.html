@@ -26,44 +26,33 @@
 						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 						<li data-target="#myCarousel" data-slide-to="1"></li>
 						<li data-target="#myCarousel" data-slide-to="2"></li>
+						<li data-target="#myCarousel" data-slide-to="3"></li>
 					</ol>
 					<!--設置輪播圖片-->
 					<div class="carousel-inner">
 
-						<!--首页-->
-						<div class="item active">
-							<a :href="carousel1" class="avatar">
-								<img :src="hotGame1" alt="" style="height:400px; width:100%;" />
-							</a>
-
-							<!--添加游戏對應的名称和价格-->
-							<div class="carousel-caption">
-								<h4>NARUTO</h4>
-								<p>MR</p>
+						<template v-for="(value,index) in hereimg">
+							<div class="item active" v-if="index==0">
+								<a :href="value.local" class="avatar">
+									<img :src="value.img" alt=" " style="height:400px; width:100%; " />
+									<!--添加游戏對應的名称和价格-->
+									<div class="carousel-caption ">
+										<h4>{{value.gamename}}</h4>
+										<p>{{value.gameprice}}</p>
+									</div>
+								</a>
 							</div>
-						</div>
-						<div class="item">
-							<a :href="carousel2" class="avatar">
-								<img :src="hotGame2" alt="" style="height:400px; width:100%;" />
-							</a>
+							<div class="item" v-else>
+								<a :href="value.local" class="avatar">
+									<img :src="value.img" alt=" " style="height:400px; width:100%; ">
+									<!--添加游戏對應的名称和价格-->
+									<div class="carousel-caption ">
+										<h4>{{value.gamename}}</h4>
+										<p>{{value.gameprice}}</p>
+									</div>
 
-							<!--添加游戏對應的名称和价格-->
-							<div class="carousel-caption">
-								<h4>FATE</h4>
-								<p>SABER</p>
 							</div>
-						</div>
-						<div class="item">
-							<a :href="carousel3" class="avatar">
-								<img :src="hotGame3" alt="" style="height:400px; width:100%;" />
-							</a>
-
-							<!--添加游戏對應的名称和价格-->
-							<div class="carousel-caption">
-								<h4>NATURO</h4>
-								<p>NINE</p>
-							</div>
-						</div>
+						</template>
 
 						<!--設置輪播圖片控制器-->
 						<!-- 轮播（Carousel）导航 -->
@@ -317,7 +306,7 @@
 			</div>
 	</body>
 	</body>
-	
-	<script type="text/javascript" src="etc.js" ></script>
+
+	<script type="text/javascript" src="etc.js"></script>
 
 </html>

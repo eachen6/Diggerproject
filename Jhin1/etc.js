@@ -2,14 +2,30 @@
 new Vue({
 	el: '#carousel',
 	data: {
-		carousel1: 'www.bing.com',
-		carousel2: 'www.7k7k.com',
-		carousel3: 'www.sougou.com',
-		hotGame1: '../img/exm4.jpg',
-		hotGame2: '../img/exm1.jpg',
-		hotGame3: '../img/exm8.jpg'
+		hereimg: [{
+			img: '../img/exm4.jpg',
+			gamename: 'NATUTO',
+			gameprice: '100',
+			local: 'www.bing.com'
+		}, {
+			img: '../img/exm2.jpg',
+			gamename: 'NATUTO',
+			gameprice: '100',
+			local: 'www.baidu.com'
+		}, {
+			img: '../img/exm1.jpg',
+			gamename: 'NATUTO',
+			gameprice: '100',
+			local: 'www.7k7k.com'
+			
+		}, {
+			img: '../img/exm8.jpg',
+			gamename: 'NATUTO',
+			gameprice: '100',
+			local: 'www.bilibili.com'
+		}]
 	}
-})
+})  
 
 /*游戏列表界面*/
 new Vue({
