@@ -18,6 +18,10 @@
   color: #777;
 }
 
+
+/**
+ * 实现位置偏移
+ */
 .name_box{
 	position: absolute;
 	top: 195px;
@@ -38,6 +42,9 @@
 	font-size: 16px;
 }
 
+/**
+ * 页面右侧表单样式
+ */
 .table_content{
 	border-collapse:separate;
 	 border-spacing:0px 10px;
@@ -60,6 +67,18 @@
 	padding: 5px 5px;
 	height: 35px;
 	width: 205px;
+}
+
+/**
+ * 页面内容不可选
+ */
+body{
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
 }
 
 
