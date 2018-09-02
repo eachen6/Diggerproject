@@ -1,16 +1,17 @@
+
 /**
  * QRCode生成
  */
-var qrcode = new QRCode(document.getElementById("qrcode"), {
-	width : 100,
-	height : 100
-});
-
-
+//var qrcode = new QRCode(document.getElementById("qrcode"), {
+//	width : 100,
+//	height : 100
+//});
+//
+//
 $(document).ready(function(){
 	
-	var qrText = "扫描付款";
-	qrcode.makeCode(qrText);
+//	var qrText = "扫描付款";
+//	qrcode.makeCode(qrText);
 	
 	$("#btn_wish").click(function(e){
 	game.iswish = (game.iswish == false) ? true : false

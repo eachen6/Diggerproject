@@ -13,6 +13,22 @@
 	<script type="text/javascript" src="../vue/vue.min.js"></script>
 
 	<body>
+		
+		<!--顶部导航栏-->
+	<nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid" style="margin-left: 17%; margin-right: 17%;"> 
+            <ul class="nav navbar-nav" >
+               <li><a href="main.html?location=home">精选</a></li>
+               <li class="active"><a id="toallgame" style="cursor: pointer;" href="main.html?location=etc">所有游戏</a></li>
+            </ul>
+            <form class="navbar-form navbar-right" style="margin-right: auto;" role="search">
+                 <div class="form-group">
+                     <input type="text" class="form-control" placeholder="Search">
+                 </div>
+                 <button type="submit" class="btn btn-default">提交</button>
+            </form>
+        </div>
+    </nav>
 
 		<!--轮播图界面-->
 		<div id="carousel" class="container" style="height: 550px;margin-top: 30px;">
@@ -215,46 +231,46 @@
 						<table class="table">
 							<tr>
 								<th>
-									<h4 style="margin-top: 30px;">热门标签</h4></th>
+									<h4 style="margin-top: 30px;">分类</h4></th>
 							</tr>
 							<tr>
 								<th>
-									<div class="checkbox btn btn-sm"><label><input type="checkbox">篮球</label></div>
+									<div class="checkbox btn btn-sm"><label><input type="checkbox">体育</label></div>
 								</th>
 								<th>
-									<div class="checkbox btn btn-sm"><label><input type="checkbox">大型网游</label></div>
-								</th>
-							</tr>
-							<tr>
-								<th>
-									<div class="checkbox btn btn-sm"><label><input type="checkbox">单机</label></div>
-								</th>
-								<th>
-									<div class="checkbox btn btn-sm"><label><input type="checkbox">免费</label></div>
+									<div class="checkbox btn btn-sm"><label><input type="checkbox">动作</label></div>
 								</th>
 							</tr>
 							<tr>
 								<th>
-									<div class="checkbox btn btn-sm"><label><input type="checkbox">电子竞技</label></div>
+									<div class="checkbox btn btn-sm"><label><input type="checkbox">益智</label></div>
 								</th>
-								<th>
-									<div class="checkbox btn btn-sm"><label><input type="checkbox">功能游戏</label></div>
-								</th>
-							</tr>
-							<tr>
-								<th>
-									<div class="checkbox btn btn-sm"><label><input type="checkbox">赛车竞速</label></div>
-								</th>
-								<th>
-									<div class="checkbox btn btn-sm"><label><input type="checkbox">动作冒险</label></div>
-								</th>
-							</tr>
-							<tr>
 								<th>
 									<div class="checkbox btn btn-sm"><label><input type="checkbox">FPS</label></div>
 								</th>
+							</tr>
+							<tr>
 								<th>
-									<div class="checkbox btn btn-sm"><label><input type="checkbox">角色扮演</label></div>
+									<div class="checkbox btn btn-sm"><label><input type="checkbox">策略</label></div>
+								</th>
+								<th>
+									<div class="checkbox btn btn-sm"><label><input type="checkbox">网游</label></div>
+								</th>
+							</tr>
+							<tr>
+								<th>
+									<div class="checkbox btn btn-sm"><label><input type="checkbox">装扮</label></div>
+								</th>
+								<th>
+									<div class="checkbox btn btn-sm"><label><input type="checkbox">休闲</label></div>
+								</th>
+							</tr>
+							<tr>
+								<th>
+									<div class="checkbox btn btn-sm"><label><input type="checkbox">双人</label></div>
+								</th>
+								<th>
+									<div class="checkbox btn btn-sm"><label><input type="checkbox">单机</label></div>
 								</th>
 							</tr>
 						</table>
@@ -304,7 +320,6 @@
 
 				</div>
 			</div>
-	</body>
 	</body>
 
 	<script type="text/javascript" src="../js/etc.js"></script>
